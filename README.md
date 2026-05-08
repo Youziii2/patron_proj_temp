@@ -44,11 +44,11 @@ Potential research directions:
 
 > The files below are theorized datasets for a hypothesized study design. They do not yet exist and are described here to outline the intended data structure.
 
-- `00-simulated_data/simulated_data.csv` — Synthetic procurement records for pipeline testing. Would include all key columns of the final analysis dataset with randomly generated values calibrated to approximate real distributions.
-- `01-raw_data/proactive_disclosure_contracts.csv` — Raw contract-level records from the Government of Canada Proactive Disclosure of Contracts portal. One row per contract award; columns include contract reference number, vendor name, department, award date, contract value, amendment value, description, and competition type code.
-- `01-raw_data/compustat_contractors.csv` — Firm-year financial panel extracted from Compustat North America (WRDS). Columns include firm identifier (GVKEY), fiscal year, revenue, employees, operating income, total assets, NAICS code. Restricted-access; not committed to the repository.
-- `01-raw_data/elections_canada_results.csv` — Federal election results and calendar data from Elections Canada. Columns include election date, riding, candidate, party, votes received, and elected indicator.
-- `02-analysis_data/analysis_data.csv` — Cleaned and merged contract–firm–year panel. Each row is a procurement contract linked to the awarding firm's lagged financial characteristics and the electoral-proximity measures active at the time of award.
+- `00-simulated_data/simulated_data.csv` contains simulated data used to test the analysis pipeline.
+- `01-raw_data/proactive_disclosure_contracts.csv` contacts contract-level recrods of procurements. Columns include contract reference code, firm name, department, award timeline, contract value, amendment value (if any), description of contracts, and competition type.
+- `01-raw_data/compustat_contractors.csv` contains firms' labor productivity proxy, efficiency proxy, such as firm identifier, revenue, employees, operating income, total assets. Or, contains some measurement of the awards cost-efficiency, as well as the procurement outcome measurement. 
+- `01-raw_data/elections_canada_results.csv` contains Federal election results and calendar data, such as election date, riding, candidate, party, votes received, and elected indicator.
+- `02-analysis_data/analysis_data.csv` contains cleaned and merged contract–firm–year panel of variables aforementioned. 
 
 ### `scripts/`
 
