@@ -1,0 +1,67 @@
+name: Bug Report
+description: Report a bug or issue in your project code
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - ccochrane
+  - mcowan38
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Something not working in your code? Describe the issue below.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      placeholder: e.g., Housing Policy Analysis
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+      placeholder: When I run this script, this error occurs...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run script X
+        2. With data Y
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: I expected the script to output...
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        - OS: macOS / Windows / Linux
+        - R version: 4.x.x
+        - Python version: 3.x.x
+        - Relevant packages:
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message or logs
+      description: Paste the full error message or relevant logs
+      render: shell
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. We'll take a look soon.

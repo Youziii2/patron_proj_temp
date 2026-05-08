@@ -1,0 +1,70 @@
+name: Project Help
+description: Ask for help or feedback on your project
+title: "[Help]: "
+labels: ["question", "help wanted"]
+assignees:
+  - ccochrane
+  - mcowan38
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Stuck on something or want feedback? Let us know.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      placeholder: e.g., Housing Policy Analysis
+    validations:
+      required: true
+
+  - type: dropdown
+    id: help_type
+    attributes:
+      label: What kind of help do you need?
+      options:
+        - Code review / feedback
+        - Debugging help
+        - Methodological question
+        - Data question
+        - Literature / references
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      placeholder: Describe what you're stuck on or what feedback you're looking for...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you tried or considered?
+      placeholder: |
+        - I tried X but it didn't work because...
+        - I'm deciding between approach A and B...
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Relevant code or files (optional)
+      description: Paste code snippets or reference specific files
+      render: shell
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources you've consulted (optional)
+      placeholder: Links to documentation, papers, Stack Overflow posts, etc.
+
+  - type: markdown
+    attributes:
+      value: |
+        We'll get back to you soon. Feel free to also bring this up in Slack if it's urgent.

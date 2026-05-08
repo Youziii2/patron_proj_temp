@@ -1,0 +1,9 @@
+# CODEOWNERS - Automatically request reviews from these users
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+* @mcowan38 @ccochrane
+
+# You can also set owners for specific paths:
+# /scripts/    @mcowan38
+# /paper/      @ccochrane

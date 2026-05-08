@@ -1,0 +1,33 @@
+name: PR Welcome
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Welcome message
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prAuthor = context.payload.pull_request.user.login;
+            const body = `Thanks for the update, @${prAuthor}!
+
+            **Review checklist:**
+            - [ ] Summary clearly describes what was accomplished
+            - [ ] Goals from last check-in are addressed
+            - [ ] Code runs without errors
+            - [ ] Next steps are defined
+
+            A reviewer will take a look soon.`;
+
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: body
+            });
