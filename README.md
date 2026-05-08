@@ -73,4 +73,18 @@ Potential research directions:
 
 ## Statement on LLM Usage
 
-This project was developed with LLM assistance. Usage is logged in `other/llm_usage/usage.txt`.
+This project was developed with the assistance of LLMs.
+
+AI-assisted code completion (e.g., GitHub Copilot, Qodo Gen) was used throughout development:
+
+- Error messaging and debugging within selected scripts
+- Refining mathematical notation and function documentation
+- Formatting the Quarto manuscript
+
+1. AI-assisted code completion (e.g., GitHub Copilot, Qodo Gen) was used throughout development.
+
+Error messaging and debugging within selected scripts;
+
+Refining mathematical notation and function documentation;
+
+Formatting the Quarto manuscript.
